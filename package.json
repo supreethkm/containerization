@@ -1,0 +1,28 @@
+{
+  "name": "containerization",
+  "version": "1.0.0",
+  "description": "Project to demostrate Docker and Kubernetes using nodeJS application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supreethkm/containerization.git"
+  },
+  "keywords": [
+    "Docker",
+    "Kubernetes",
+    "Nodejs"
+  ],
+  "author": "@supreeth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supreethkm/containerization/issues"
+  },
+  "homepage": "https://github.com/supreethkm/containerization#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
