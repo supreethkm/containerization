@@ -7,7 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dbuild": "docker build .",
-    "drun": "docker run -p 80:3000"
+    "drun": "docker run -p 80:3000",
+    "dev-build": "docker build -t dev-image:dev .",
+    "dev-run": "docker run --rm -d --name dev-container dev-image:dev",
+    "cont-stop": "docker stop dev-container",
+    "cont-start": "docker start dev-container",
+    "build-run": "npm run dev-build && npm run dev-run"
   },
   "repository": {
     "type": "git",
