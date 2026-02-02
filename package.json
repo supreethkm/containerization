@@ -12,7 +12,8 @@
     "dev-run": "docker run --rm -d --name dev-container dev-image:dev",
     "cont-stop": "docker stop dev-container",
     "cont-start": "docker start dev-container",
-    "build-run": "npm run dev-build && npm run dev-run"
+    "build-run": "npm run dev-build && npm run dev-run",
+    "dev-run-volu": "docker run --rm -d --name dev-container -v /app/temp -v named:/app/temp2 -v 'C:/user/containerization':/app /dev-image:dev"
   },
   "repository": {
     "type": "git",
